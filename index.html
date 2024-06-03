@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天氣</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input list="browsers" type="text" class="input-box" placeholder="Enter city name">
+                <datalist id="browsers">
+                    <option value="Keelung">
+                    <option value="Xinbei">
+                    <option value="Taipei">
+                    <option value="Taoyuan">
+                    <option value="Hsinchu">
+                    <option value="Miaoli">
+                    <option value="Taichung">
+                    <option value="Changhua">
+                    <option value="Nantou">
+                    <option value="Yunlin">
+                    <option value="Chiayi">
+                    <option value="Tainan">
+                    <option value="Kaohsiung">
+                    <option value="Pingtung">
+                    <option value="Yilan">
+                    <option value="Hualien">
+                    <option value="Taitung">
+                    <option value="Penghu">
+                    <option value="Kinmen">
+                    <option value="Lienchiang">
+                </datalist>
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>找不到該地區</h1>
+            <img src="assets/not-found.png" alt="404 error">
+        </div>
+
+        <div class="weather-body">
+            <img src="assets/animal.png" alt="weather img" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">_ <sup>°C</sup></p>
+                <p class="description">_</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-tint"></i>
+                    <div class="text">
+                        <span id="humidity">_%</span>
+                        <p>濕度</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fas fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">_Km/H</span>
+                        <p>風速</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ccc0bd32ad.js" crossorigin="anonymous"></script>
+</body>
+</html>
