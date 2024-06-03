@@ -42,8 +42,8 @@ async function checkWeather(city) {
         case 'Snow':
             weather_img.src = 'assets/snow.png';
             break;
-        default:
-            weather_img.src = 'assets/not-found.png';
+        // default:
+        //     weather_img.src = 'assets/not-found.png';
     }
 }
 searchBtn.addEventListener('click', () => {
